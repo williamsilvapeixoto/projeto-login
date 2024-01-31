@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
+  <link rel="stylesheet" href="estilos/style.css" media="all">
 </head>
 <body>
     <main>
@@ -15,6 +15,17 @@
             <div id="tela-login">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente!</p>
+
+                <form action="login.php" method="post" autocomplete="on">
+                    <div id="email">
+                        <label for="iemail"><img src="imagens/account_circle_FILL0_wght400_GRAD0_opsz24.png" alt="Circulo de conta"></label>
+                        <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="   Digite seu e-mail">
+                    </div>
+                    <div id="senha">
+                        <label for="isenha"><img src="imagens/vpn_key_FILL0_wght400_GRAD0_opsz24.png" alt="Senha"></label>
+                        <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="   Digite sua senha" minlength="8">
+                </form>
+                </div>
             </div>
         </section>
     </main>
