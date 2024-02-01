@@ -19,7 +19,7 @@
 }
 
 body{
-    background-color: var(--cinza-marrom);
+    background-image: linear-gradient(to bottom, var(--cinza-marrom), var(--laranja));
 }
 
 main{
@@ -35,10 +35,10 @@ section#login{
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    height: 500px;
+    height: 520px;
     width: 300px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.45);
     border: 2px solid var(--azul);
 }
 
@@ -61,7 +61,7 @@ div#tela-login p{
     padding: 0 8px 8px 8px;
 }
 
-div#email{
+section#email{
     background-color: var(--azul);
     text-align: center;
     margin: 7px 5px 0 5px;
@@ -70,7 +70,7 @@ div#email{
     position: relative;
 }
 
-div#email img{
+section#email img{
     height: 37px;
     position: absolute;
     top: 50%;
@@ -78,7 +78,7 @@ div#email img{
     transform: translate(-50%, -50%);
 }
 
-div#email input{
+section#email input{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,9 +87,10 @@ div#email input{
     border: none;
     height: 30px;
     width: 230px;
+    background-color: var(--verde);
 }
 
-div#senha{
+section#senha{
     background-color: var(--azul);
     text-align: center;
     margin: 7px 5px 0 5px;
@@ -98,7 +99,7 @@ div#senha{
     position: relative;
 }
 
-div#senha img{
+section#senha img{
     height: 37px;
     position: absolute;
     top: 50%;
@@ -106,7 +107,7 @@ div#senha img{
     transform: translate(-50%, -50%);
 }
 
-div#senha input{
+section#senha input{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -115,10 +116,59 @@ div#senha input{
     border: none;
     height: 30px;
     width: 230px;
+    background-color: var(--verde);
 }
 
-div#email input, div#senha input{
+section#senha input:focus-within, section#email input:focus-within{
+    background-color: white;
+}
+
+section#email input, section#senha input{
     font-size: 1em;
+}
+
+div#sub1{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div > section#sub{
+    position: relative;
+    height: 50px;
+}
+
+section#sub input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    height: 45px;
+    width: 285px;
+    border-radius: 10px;
+    border-color: lightgray;
+}
+
+div#eas1{
+    display: block;
+}
+
+div > section#eas{
+    position: relative;
+    height: 45px;
+}
+
+section#eas input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    height: 45px;
+    width: 285px;
+    border-radius: 10px;
+    border-color: lightgray;
 }
 
 
