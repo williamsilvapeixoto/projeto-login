@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* Versão Monile First */
-
-/* Paleta de cores */
 :root{
     --verde: #e2eb98;
     --cinza: #8e9aaf;
@@ -19,7 +16,7 @@
 }
 
 body{
-    background-color: var(--cinza-marrom);
+    background-image: linear-gradient(to bottom, var(--cinza-marrom), var(--laranja));
 }
 
 main{
@@ -35,32 +32,43 @@ section#login{
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    height: 520px;
-    width: 300px;
+    height: 300px;
+    width: 650px; 
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.45);
     border: 2px solid var(--azul);
     transition-duration: 0.5s;
 }
 
 section#login div#imagem{
+    position: relative;
+    top: 50%;
+    left: 35%;
+    transform: translate(-100%, -50%);
     background-color: black;
     background-image: url('../imagens/predio-login.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
-    height: 40%;
-    border-radius: 19px 19px 0px 0px;
+    height: 100%;
+    width: 35%;
+    border-radius: 18.5px 0px 0px 18.5px;
 }
 
 section#login div#tela-login h1{
     text-align: center;
     padding: 20px;
     font-size: 2.2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(17%, -370%);
 }
 
 div#tela-login p{
     padding: 0 8px 8px 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(36%, -1100%);
 }
 
 section#email{
@@ -70,6 +78,10 @@ section#email{
     border-radius: 8px;
     height: 40px;
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-23%, -700%);
+    width: 400px;
 }
 
 section#email img{
@@ -88,7 +100,7 @@ section#email input{
     border-radius: 8px;
     border: none;
     height: 30px;
-    width: 230px;
+    width: 326px;
 }
 
 section#senha{
@@ -98,6 +110,10 @@ section#senha{
     border-radius: 8px;
     height: 40px;
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-23%, -700%);
+    width: 400px;
 }
 
 section#senha img{
@@ -116,7 +132,7 @@ section#senha input{
     border-radius: 8px;
     border: none;
     height: 30px;
-    width: 230px;
+    width: 326px;
 }
 
 section#email input, section#senha input{
@@ -148,6 +164,9 @@ section#sub input{
     background-color: white;
     border: 2px solid var(--cinza);
     font-size: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-8%, -670%);
 }
 
 section#sub input:hover{
