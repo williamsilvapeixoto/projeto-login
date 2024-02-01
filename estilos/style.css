@@ -6,7 +6,7 @@
 :root{
     --verde: #e2eb98;
     --cinza: #8e9aaf;
-    --laranja: #fa824c;
+    --laranja: #fb905e;
     --cinza-marrom: #36382e;
     --azul: #5bc3eb;
 }
@@ -87,7 +87,6 @@ section#email input{
     border: none;
     height: 30px;
     width: 230px;
-    background-color: var(--verde);
 }
 
 section#senha{
@@ -116,11 +115,6 @@ section#senha input{
     border: none;
     height: 30px;
     width: 230px;
-    background-color: var(--verde);
-}
-
-section#senha input:focus-within, section#email input:focus-within{
-    background-color: white;
 }
 
 section#email input, section#senha input{
@@ -129,7 +123,7 @@ section#email input, section#senha input{
 
 div#sub1{
     display: block;
-    margin-top: 5px;
+    margin-top: 17px;
     margin-bottom: 5px;
 }
 
@@ -148,27 +142,31 @@ section#sub input{
     width: 285px;
     border-radius: 10px;
     border-color: lightgray;
+    box-shadow: none;
+    background-color: white;
+    border: 2px solid var(--cinza);
+    font-size: 1em;
 }
 
-div#eas1{
+section#sub input:hover{
+    background-color: var(--cinza);
+    color: white;
+    border: 2px solid var(--laranja);
+}
+
+section#eas{
     display: block;
 }
 
-div > section#eas{
-    position: relative;
-    height: 45px;
+section#eas a{
+    text-decoration: none;
+    display: block;
+    width: 138px;
+    padding-top: 10px;
+    margin: auto;
+    font-size: 0.9em;
 }
 
-section#eas input{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    height: 45px;
-    width: 285px;
-    border-radius: 10px;
-    border-color: lightgray;
+section#eas a:hover{
+    text-decoration: underline;
 }
-
-
