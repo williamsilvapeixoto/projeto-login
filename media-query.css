@@ -1,7 +1,17 @@
 @charset "UTF-8";
 
+/* 
+    Typical Devices Breakpoints
+----------------------------------
+    Pequenas telas: até 600px
+    Celular: de 601px até 768px
+    Tablet: de 769px até 992px
+    Desktops: de 993px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
 :root{
-    --verde: #e2eb98;
+    --verde: #81f499;
     --cinza: #8e9aaf;
     --laranja: #fb905e;
     --cinza-marrom: #36382e;
@@ -16,13 +26,21 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, var(--cinza-marrom), var(--laranja));
+    background-image: linear-gradient(to bottom, var(--cinza-marrom), #38369a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 main{
     position: relative;
     height: 97vh;
+    width: 100vw;
 }
+
+@media screen and (min-width: 769px) and (max-width: 992px){
 
 section#login{
     text-align: center;
@@ -36,6 +54,7 @@ section#login{
     border-radius: 20px;
     border: 2px solid var(--azul);
     transition-duration: 0.5s;
+    box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.39);
 }
 
 div#imagem{
@@ -126,7 +145,7 @@ section#senha input{
     height: 80%;
     position: absolute;
     left: 3.75%;
-    top: 9%;
+    top: 10%;
     transform: translate(12%, 0%);
     border-radius: 8px;
     border: none;
@@ -173,4 +192,6 @@ section#eas a{
 
 section#eas a:hover{
     text-decoration: underline;
+}
+    
 }
