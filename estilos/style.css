@@ -123,6 +123,11 @@ section#email input, section#senha input{
     font-size: 1em;
 }
 
+section#email input:focus-within, section#senha input:focus-within{
+    background-color: var(--verde);
+}
+
+
 div#sub1{
     display: block;
     margin-top: 17px;
@@ -167,6 +172,7 @@ section#eas a{
     padding-top: 10px;
     margin: auto;
     font-size: 0.9em;
+    color: rgb(74, 74, 74);
 }
 
 section#eas a:hover{
