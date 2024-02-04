@@ -50,11 +50,11 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 20px;
     border: 2px solid var(--azul);
-    transition-duration: 0.5s;
     box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.39);
+    transform: translate(-50%, -50%);
+    transition-duration: 0.5s;
 }
 
 div#imagem{
@@ -72,12 +72,11 @@ div#tela-login{
     position: relative;
     top: -50%;
     left: 23%;
-    transform: translate(-5%, -50%);
     width: 50vw;
     box-sizing: border-box;
     overflow: hidden;
     margin: auto;
-
+    transform: translate(-5%, -50%);
 }
 
 section#login div#tela-login h1{
@@ -117,10 +116,10 @@ section#email input{
     position: absolute;
     left: 3.5%;
     top: 13%;
-    transform: translate(12.6%, -4%);
     border-radius: 8px;
     border: none;
     font-size: 1em;
+    transform: translate(12.6%, -4%);
 }
 
 section#email input:focus-within, section#senha input:focus-within{
@@ -152,10 +151,10 @@ section#senha input{
     position: absolute;
     left: 3.5%;
     top: 11%;
-    transform: translate(12.6%, 0%);
     border-radius: 8px;
     border: none;
     font-size: 1em;
+    transform: translate(12.6%, 0%);
 }
 
 div#sub1{
@@ -173,7 +172,6 @@ section#sub input{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     cursor: pointer;
     height: 45px;
     width: 70%;
@@ -183,6 +181,7 @@ section#sub input{
     background-color: white;
     border: 2px solid var(--cinza);
     font-size: 1em;
+    transform: translate(-50%, -50%);
 }
 
 section#sub input:hover{
@@ -212,11 +211,11 @@ section#eas a:hover{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         border-radius: 20px;
         border: 2px solid var(--azul);
-        transition-duration: 0.5s;
         box-shadow: 0 -16px 15px rgba(0, 0, 0, 0.39);
+        transform: translate(-50%, -50%);
+        transition-duration: 0.5s;
     }
 
     div#imagem{
@@ -235,9 +234,9 @@ section#eas a:hover{
         position: relative;
         top: -50%;
         left: 25%;
-        transform: translate(-50%, -50%);
         width: 400px;
         height: 320px;
+        transform: translate(-50%, -50%);
     }
 
     section#login div#tela-login h1{
@@ -275,10 +274,10 @@ section#eas a:hover{
         position: absolute;
         left: 3.9%;
         top: 5.575px;
-        transform: translate(12%, -4%);
         border-radius: 8px;
         border: none;
         font-size: 1em;
+        transform: translate(12%, -4%);
     }
 
     section#email input:focus-within, section#senha input:focus-within{
@@ -302,10 +301,10 @@ section#eas a:hover{
         position: absolute;
         left: 3.9%;
         top: 14.5%;
-        transform: translate(12%, -4%);
         border-radius: 8px;
         border: none;
         font-size: 1em;
+        transform: translate(12%, -4%);
     }
 
     section#senha img{
@@ -320,7 +319,6 @@ section#eas a:hover{
         position: absolute;
         top: 80%;
         left: 50%;
-        transform: translate(-50%, -50%);
         cursor: pointer;
         height: 45px;
         width: 75%;
@@ -330,6 +328,7 @@ section#eas a:hover{
         background-color: white;
         border: 2px solid var(--cinza);
         font-size: 1em;
+        transform: translate(-50%, -50%);
     }
     
     section#sub input:hover{
@@ -342,9 +341,9 @@ section#eas a:hover{
         position: absolute;
         top: 92%;
         left: 51%;
-        transform: translate(-51%, 0%);
         text-decoration: none;
         color: rgb(74, 74, 74);
+        transform: translate(-51%, 0%);
     }
     
     section#eas a:hover{
